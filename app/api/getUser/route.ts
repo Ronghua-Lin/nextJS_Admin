@@ -9,7 +9,7 @@ export const POST = async (req: Request) => {
   await dbConnect();
   try {
     const user = await User.findOne({ username });
-    console.log("user", user);
+
 
     return NextResponse.json(
       {

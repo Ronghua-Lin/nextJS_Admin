@@ -54,7 +54,7 @@ export const updateUser = async (formData: FormData) => {
   const { id, username, email, password, phone, address, isAdmin, isActive } =
     Object.fromEntries(formData);
   try {
-    const updateFields = {
+    const updateFields:any = {
       username,
       email,
       password,
@@ -123,7 +123,7 @@ export const updateProduct = async (formData: FormData) => {
   const { id, title, desc, price, stock, color, size } =
     Object.fromEntries(formData);
   try {
-    const updateFields = {
+    const updateFields:any = {
       title,
       desc,
       price,
